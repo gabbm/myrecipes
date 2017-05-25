@@ -20,4 +20,9 @@ class ApplicationController < ActionController::Base
       redirect_to recipes_path
     end
   end
+  
+  def admin_user
+    redirect_to recipes_path unless current_user.admin?
+  end
+  
 end
