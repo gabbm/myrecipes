@@ -23,6 +23,9 @@ gem 'bootstrap-will_paginate', '0.0.10'
 # BCrypt
 gem 'bcrypt', '3.1.7'
 
+# File handling system for production
+gem 'fog', '1.23.0'
+
 gem 'spring',        group: :development
 
 group :development, :test do
