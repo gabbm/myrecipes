@@ -2,6 +2,7 @@ class Chef < ActiveRecord::Base
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   
   has_many :recipes
+  has_many :likes
   
   before_save { self.email = email.downcase }
   
